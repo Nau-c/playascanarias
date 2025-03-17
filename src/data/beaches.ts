@@ -13,6 +13,11 @@ export interface Beach {
     windSpeed?: number;
     waveHeight?: number;
   };
+  capacity?: {
+    current: number;
+    percentage: number;
+    lastUpdate: string;
+  };
 }
 
 export const beaches: Beach[] = [
@@ -75,5 +80,18 @@ export const beaches: Beach[] = [
     accessible: false,
     imageUrl:
       "https://tse2.mm.bing.net/th?id=OIP.Lh8vnZM2hQEjGrVRialfwwHaE7&pid=Api&P=0&h=180",
+  },
+  {
+    id: 6,
+    name: "Playa de Las Alcaravaneras",
+    island: "Gran Canaria",
+    latitude: 28.1297,
+    longitude: -15.4297,
+    description:
+      "Playa urbana protegida ideal para deportes náuticos y actividades familiares.",
+    blueFlag: true,
+    accessible: true,
+    imageUrl:
+      "https://tse3.mm.bing.net/th?id=OIP.pEMQn2Z-1vxYg29ZXiEYggHaEw&pid=Api&P=0&h=180",
   },
 ];

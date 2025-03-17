@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Waves, Sun, Wind, Award, Accessibility } from 'lucide-react';
+import { MapPin, Waves, Sun, Wind, Award, Accessibility, Users } from 'lucide-react';
 import type { Beach } from '../data/beaches';
 
 interface BeachCardProps {
@@ -7,10 +7,19 @@ interface BeachCardProps {
 }
 
 export default function BeachCard({ beach }: BeachCardProps) {
+  const isLasCanteras = beach.name === "Playa de Las Canteras";
+  const isAlcaravaneras = beach.name === "Playa de Las Alcaravaneras";
+
+  const getOccupancyColor = (percentage: number) => {
+    if (percentage < 33) return 'bg-green-500';
+    if (percentage < 66) return 'bg-yellow-500';
+    return 'bg-red-500';
+  };
+
   return (
     <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-105">
-      <img 
-        src={beach.imageUrl || 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e'} 
+      <img
+        src={beach.imageUrl || 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e'}
         alt={beach.name}
         className="w-full h-48 object-cover"
       />
@@ -31,6 +40,96 @@ export default function BeachCard({ beach }: BeachCardProps) {
           <span className="text-sm">{beach.island}</span>
         </div>
         <p className="text-gray-600 mb-4">{beach.description}</p>
+        {isLasCanteras && (
+          <div className="border-t pt-4 mt-4">
+            <div className="flex items-center mb-2">
+              <Users className="w-5 h-5 text-gray-600 mr-2" />
+              <span className="font-semibold">Ocupación por zonas:</span>
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(30)} mr-2`}></div>
+                <span className="text-sm">La Puntilla: 30%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(45)} mr-2`}></div>
+                <span className="text-sm">Playa Chica: 45%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(55)} mr-2`}></div>
+                <span className="text-sm">Peña La Vieja: 55%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(40)} mr-2`}></div>
+                <span className="text-sm">Playa Grande: 40%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(60)} mr-2`}></div>
+                <span className="text-sm">La Cicer: 60%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(35)} mr-2`}></div>
+                <span className="text-sm">La Cícer Sur: 35%</span>
+              </div>
+            </div>
+            <div className="mt-2 text-xs text-gray-500">
+              <div className="flex items-center gap-2 justify-center">
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-green-500 mr-1"></div>
+                  <span>Baja</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-yellow-500 mr-1"></div>
+                  <span>Media</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-red-500 mr-1"></div>
+                  <span>Alta</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {isAlcaravaneras && (
+          <div className="border-t pt-4 mt-4">
+            <div className="flex items-center mb-2">
+              <Users className="w-5 h-5 text-gray-600 mr-2" />
+              <span className="font-semibold">Ocupación por zonas:</span>
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(25)} mr-2`}></div>
+                <span className="text-sm">Zona Norte: 25%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(35)} mr-2`}></div>
+                <span className="text-sm">Zona Centro: 35%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(30)} mr-2`}></div>
+                <span className="text-sm">Zona Sur: 30%</span>
+              </div>
+            </div>
+            <div className="mt-2 text-xs text-gray-500">
+              <div className="flex items-center gap-2 justify-center">
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-green-500 mr-1"></div>
+                  <span>Baja</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-yellow-500 mr-1"></div>
+                  <span>Media</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-red-500 mr-1"></div>
+                  <span>Alta</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
         {beach.weather && (
           <div className="flex justify-between items-center border-t pt-4">
             <div className="flex items-center">
