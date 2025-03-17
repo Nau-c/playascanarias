@@ -25,7 +25,8 @@ export const beaches: Beach[] = [
     description: "Playa turística muy popular con arena dorada.",
     blueFlag: true,
     accessible: true,
-    imageUrl: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+    imageUrl:
+      "https://tse2.mm.bing.net/th?id=OIP.b5OsfLVemZA3-567V6jRFQHaE8&pid=Api&P=0&h=180",
   },
   {
     id: 2,
@@ -36,7 +37,8 @@ export const beaches: Beach[] = [
     description: "Ubicada en la capital, ideal para surf y paseos.",
     blueFlag: true,
     accessible: true,
-    imageUrl: "https://images.unsplash.com/photo-1519046904884-53103b34b206"
+    imageUrl:
+      "https://tse3.mm.bing.net/th?id=OIP.RDH88_l_XxzZFdypV4iXTAHaEK&pid=Api&P=0&h=180",
   },
   {
     id: 3,
@@ -47,18 +49,20 @@ export const beaches: Beach[] = [
     description: "Cala tranquila con arena clara y ambiente familiar.",
     blueFlag: true,
     accessible: true,
-    imageUrl: "https://images.unsplash.com/photo-1506929562872-bb421503ef21"
+    imageUrl:
+      "https://tse3.mm.bing.net/th?id=OIP.gvHWFCdMQX1Rd-TBFBFgPwHaEK&pid=Api&P=0&h=180",
   },
   {
     id: 4,
     name: "Playa de las Teresitas",
     island: "Tenerife",
     latitude: 28.5123,
-    longitude: -16.1870,
+    longitude: -16.187,
     description: "Famosa por su arena traída del Sáhara y aguas calmadas.",
     blueFlag: true,
     accessible: true,
-    imageUrl: "https://images.unsplash.com/photo-1515693516628-ad44931c4871"
+    imageUrl:
+      "https://tse1.mm.bing.net/th?id=OIP.uZOdMWfvH0hlDpqr7bjnRwHaE-&pid=Api&P=0&h=180",
   },
   {
     id: 5,
@@ -69,6 +73,7 @@ export const beaches: Beach[] = [
     description: "Spot popular para practicar windsurf y kitesurf.",
     blueFlag: false,
     accessible: false,
-    imageUrl: "https://images.unsplash.com/photo-1520942702018-0862200e6873"
-  }
+    imageUrl:
+      "https://tse2.mm.bing.net/th?id=OIP.Lh8vnZM2hQEjGrVRialfwwHaE7&pid=Api&P=0&h=180",
+  },
 ];
