@@ -94,4 +94,22 @@ export const beaches: Beach[] = [
     imageUrl:
       "https://tse3.mm.bing.net/th?id=OIP.pEMQn2Z-1vxYg29ZXiEYggHaEw&pid=Api&P=0&h=180",
   },
+  {
+    id: 7,
+    name: "Playa de La Laja",
+    island: "Gran Canaria",
+    latitude: 28.0497,
+    longitude: -15.4197,
+    description:
+      "Playa urbana de arena negra con 1200 metros de longitud, ideal para surf y deportes acuáticos. Cuenta con servicios de socorrismo y zonas deportivas.",
+    blueFlag: false,
+    accessible: true,
+    imageUrl:
+      "https://tse1.mm.bing.net/th?id=OIP.9Luwl1wwv217A1aR3Bxp9AHaCv&pid=Api&P=0&h=180",
+    weather: {
+      temperature: 22,
+      windSpeed: 15,
+      waveHeight: 1.5,
+    },
+  },
 ];
