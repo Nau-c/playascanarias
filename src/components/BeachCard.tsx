@@ -1,6 +1,7 @@
 import React from 'react';
 import { MapPin, Waves, Sun, Wind, Award, Accessibility, Users } from 'lucide-react';
 import type { Beach } from '../data/beaches';
+import { formatTideLevel } from '../utils/formatters';
 
 interface BeachCardProps {
   beach: Beach;
@@ -186,7 +187,7 @@ export default function BeachCard({ beach }: BeachCardProps) {
             </div>
             <div className="flex items-center">
               <Waves className="w-5 h-5 text-blue-400 mr-1" />
-              <span>{beach.weather.waveHeight}m</span>
+              <span>{beach.weather.waveHeight} m</span>
             </div>
           </div>
         )}
