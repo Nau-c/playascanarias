@@ -194,4 +194,27 @@ export const beaches: Beach[] = [
       lastUpdate: "2024-01-20T10:30:00",
     },
   },
+  {
+    id: 12,
+    name: "Playa de Agaete",
+    island: "Gran Canaria",
+    latitude: 28.0997,
+    longitude: -15.7027,
+    description:
+      "Piscinas naturales y playa de piedras, con gran ambiente local. Conocida por sus aguas cristalinas y la vista al Teide en días despejados.",
+    blueFlag: false,
+    accessible: true,
+    imageUrl:
+      "https://www.grancanaria.com/turismo/fileadmin/_processed_/4/7/csm_piscinas-naturales-agaete_d56b1b0115.jpg",
+    weather: {
+      temperature: 22,
+      windSpeed: 15,
+      waveHeight: 0.6,
+    },
+    capacity: {
+      current: 200,
+      percentage: 40,
+      lastUpdate: "2024-01-20T10:30:00",
+    },
+  },
 ];
