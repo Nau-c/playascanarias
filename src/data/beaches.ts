@@ -263,4 +263,27 @@ export const beaches: Beach[] = [
       lastUpdate: "2024-01-20T10:30:00",
     },
   },
+  {
+    id: 14,
+    name: "Playa de Güigüí",
+    island: "Gran Canaria",
+    latitude: 27.9089,
+    longitude: -15.8282,
+    description:
+      "Salvaje y aislada, solo accesible a pie o en barco. Una joya natural con arena negra y aguas cristalinas, rodeada de impresionantes acantilados.",
+    blueFlag: false,
+    accessible: false,
+    imageUrl:
+      "https://www.grancanaria.com/turismo/fileadmin/_processed_/4/f/csm_guigui-gran-canaria_88c7898889.jpg",
+    weather: {
+      temperature: 22,
+      windSpeed: 18,
+      waveHeight: 1.2,
+    },
+    capacity: {
+      current: 50,
+      percentage: 25,
+      lastUpdate: "2024-01-20T10:30:00",
+    },
+  },
 ];
