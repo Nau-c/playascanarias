@@ -241,29 +241,6 @@ export const beaches: Beach[] = [
     },
   },
   {
-    id: 13,
-    name: "Playa de Puerto Rico",
-    island: "Gran Canaria",
-    latitude: 27.7833,
-    longitude: -15.7087,
-    description:
-      "Turística, con muchas actividades acuáticas. Resguardada y perfecta para el baño familiar, con servicios completos y gran oferta de deportes náuticos.",
-    blueFlag: true,
-    accessible: true,
-    imageUrl:
-      "https://www.grancanaria.com/turismo/fileadmin/_processed_/4/b/csm_playa-puerto-rico-gran-canaria_d24b233e31.jpg",
-    weather: {
-      temperature: 23,
-      windSpeed: 10,
-      waveHeight: 0.3,
-    },
-    capacity: {
-      current: 600,
-      percentage: 55,
-      lastUpdate: "2024-01-20T10:30:00",
-    },
-  },
-  {
     id: 14,
     name: "Playa de Güigüí",
     island: "Gran Canaria",
