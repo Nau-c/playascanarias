@@ -148,4 +148,27 @@ export const beaches: Beach[] = [
       waveHeight: 0.8,
     },
   },
+  {
+    id: 10,
+    name: "Playa de Mogán",
+    island: "Gran Canaria",
+    latitude: 27.8834,
+    longitude: -15.7644,
+    description:
+      "Playa resguardada en un pintoresco pueblo pesquero, conocida como la 'Pequeña Venecia' por sus canales. Ideal para familias con aguas tranquilas y servicios completos.",
+    blueFlag: true,
+    accessible: true,
+    imageUrl:
+      "https://www.grancanaria.com/turismo/fileadmin/_processed_/4/a/csm_playa-mogan-gran-canaria_7d3cc7c76f.jpg",
+    weather: {
+      temperature: 23,
+      windSpeed: 10,
+      waveHeight: 0.5,
+    },
+    capacity: {
+      current: 300,
+      percentage: 45,
+      lastUpdate: "2024-01-20T10:30:00",
+    },
+  },
 ];
