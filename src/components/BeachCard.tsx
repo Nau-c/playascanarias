@@ -13,6 +13,7 @@ export default function BeachCard({ beach }: BeachCardProps) {
   const isLaLaja = beach.name === "Playa de La Laja";
   const isMelenara = beach.name === "Playa de Melenara";
   const isMogan = beach.name === "Playa de Mogán";
+  const isAgaete = beach.name === "Playa de Agaete";
 
   const getOccupancyColor = (percentage: number) => {
     if (percentage < 33) return 'bg-green-500';
@@ -294,9 +295,6 @@ export default function BeachCard({ beach }: BeachCardProps) {
           </div>
         )}
 
-        {isAgaete = beach.name === "Playa de Agaete";
-
-        // Add this section before the weather section
         {isAgaete && (
           <div className="border-t pt-4 mt-4">
             <div className="flex items-center mb-2">
