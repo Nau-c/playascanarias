@@ -14,6 +14,7 @@ export default function BeachCard({ beach }: BeachCardProps) {
   const isMelenara = beach.name === "Playa de Melenara";
   const isMogan = beach.name === "Playa de Mogán";
   const isAgaete = beach.name === "Playa de Agaete";
+  const isAnfiDelMar = beach.name === "Playa de Anfi del Mar";
 
   const getOccupancyColor = (percentage: number) => {
     if (percentage < 33) return 'bg-green-500';
