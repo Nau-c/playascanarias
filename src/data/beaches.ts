@@ -171,4 +171,27 @@ export const beaches: Beach[] = [
       lastUpdate: "2024-01-20T10:30:00",
     },
   },
+  {
+    id: 11,
+    name: "Playa de Anfi del Mar",
+    island: "Gran Canaria",
+    latitude: 27.7697,
+    longitude: -15.6647,
+    description:
+      "Arena blanca y aguas turquesas, muy cuidada. Un paraíso artificial con servicios de primera clase y ambiente familiar.",
+    blueFlag: true,
+    accessible: true,
+    imageUrl:
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/3b/95/de/anfi-del-mar.jpg?w=1200&h=-1&s=1",
+    weather: {
+      temperature: 23,
+      windSpeed: 12,
+      waveHeight: 0.4,
+    },
+    capacity: {
+      current: 400,
+      percentage: 50,
+      lastUpdate: "2024-01-20T10:30:00",
+    },
+  },
 ];
