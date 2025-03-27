@@ -6,10 +6,24 @@ import ContactForm from './components/ContactForm';
 import BeachCard from './components/BeachCard';
 import { beaches, type Beach } from './data/beaches';
 import { getWeather } from './services/weather';
+import BeachSearch from './components/BeachSearch';
 
 function App() {
   const [beachesWithWeather, setBeachesWithWeather] = useState<Beach[]>([]);
   const [loading, setLoading] = useState(true);
+  // Add these new states
+  const [searchTerm, setSearchTerm] = useState('');
+  const [selectedIsland, setSelectedIsland] = useState('');
+
+  // Get unique islands for the filter
+  const islands = Array.from(new Set(beaches.map(beach => beach.island)));
+
+  // Filter beaches based on search and island selection
+  const filteredBeaches = beachesWithWeather.filter(beach => {
+    const matchesSearch = beach.name.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesIsland = selectedIsland ? beach.island === selectedIsland : true;
+    return matchesSearch && matchesIsland;
+  });
 
   useEffect(() => {
     async function fetchWeatherData() {
@@ -44,14 +58,23 @@ function App() {
           </div>
         </section>
 
-        {/* Playas Section */}
+        {/* Update the search section */}
+        <section id="buscador" className="container mx-auto px-4 py-16">
+          <BeachSearch
+            onSearch={setSearchTerm}
+            onIslandFilter={setSelectedIsland}
+            islands={islands}
+          />
+        </section>
+
+        {/* Update the Playas section to use filteredBeaches */}
         <section id="playas" className="container mx-auto px-4 py-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Nuestras Playas</h2>
           {loading ? (
             <div className="text-center text-gray-600">Cargando información de playas...</div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {beachesWithWeather.map(beach => (
+              {filteredBeaches.map(beach => (
                 <BeachCard key={beach.id} beach={beach} />
               ))}
             </div>

@@ -263,4 +263,188 @@ export const beaches: Beach[] = [
       lastUpdate: "2024-01-20T10:30:00",
     },
   },
+  {
+    id: 15,
+    name: "Playa de Sotavento",
+    island: "Fuerteventura",
+    latitude: 28.1539,
+    longitude: -14.2297,
+    description:
+      "Meca del windsurf y kitesurf, con condiciones perfectas para deportes acuáticos. Kilómetros de arena dorada y aguas cristalinas.",
+    blueFlag: true,
+    accessible: true,
+    imageUrl:
+      "https://www.fuerteventuraoasispark.com/wp-content/uploads/2022/03/playa-sotavento-fuerteventura.jpg",
+    weather: {
+      temperature: 24,
+      windSpeed: 25,
+      waveHeight: 1.5,
+    },
+    capacity: {
+      current: 400,
+      percentage: 35,
+      lastUpdate: "2024-01-20T10:30:00",
+    },
+  },
+  {
+    id: 16,
+    name: "Playa de Cofete",
+    island: "Fuerteventura",
+    latitude: 28.1297,
+    longitude: -14.3936,
+    description:
+      "Salvaje, aislada y espectacular. Una playa virgen de 12km con impresionantes acantilados como telón de fondo.",
+    blueFlag: false,
+    accessible: false,
+    imageUrl:
+      "https://www.fuerteventuraoasispark.com/wp-content/uploads/2022/03/playa-de-cofete-fuerteventura.jpg",
+    weather: {
+      temperature: 23,
+      windSpeed: 20,
+      waveHeight: 2.0,
+    },
+    capacity: {
+      current: 100,
+      percentage: 20,
+      lastUpdate: "2024-01-20T10:30:00",
+    },
+  },
+  {
+    id: 17,
+    name: "Playa de Esquinzo-Butihondo",
+    island: "Fuerteventura",
+    latitude: 28.0747,
+    longitude: -14.3276,
+    description:
+      "Tranquila, ideal para relajarse. Extensa playa de arena dorada perfecta para desconectar.",
+    blueFlag: true,
+    accessible: true,
+    imageUrl:
+      "https://www.fuerteventuraoasispark.com/wp-content/uploads/2022/03/playa-esquinzo-butihondo.jpg",
+    weather: {
+      temperature: 23,
+      windSpeed: 15,
+      waveHeight: 0.8,
+    },
+    capacity: {
+      current: 300,
+      percentage: 40,
+      lastUpdate: "2024-01-20T10:30:00",
+    },
+  },
+  {
+    id: 18,
+    name: "Playa del Matorral",
+    island: "Fuerteventura",
+    latitude: 28.0516,
+    longitude: -14.3316,
+    description:
+      "Muy accesible, junto al faro. Playa urbana con todos los servicios y perfecta para familias.",
+    blueFlag: true,
+    accessible: true,
+    imageUrl:
+      "https://www.fuerteventuraoasispark.com/wp-content/uploads/2022/03/playa-matorral-morro-jable.jpg",
+    weather: {
+      temperature: 24,
+      windSpeed: 12,
+      waveHeight: 0.5,
+    },
+    capacity: {
+      current: 500,
+      percentage: 45,
+      lastUpdate: "2024-01-20T10:30:00",
+    },
+  },
+  {
+    id: 19,
+    name: "Playa de La Concha",
+    island: "Fuerteventura",
+    latitude: 28.6806,
+    longitude: -14.0147,
+    description:
+      "Aguas tranquilas, perfecta para familias. Una bahía natural protegida con aguas cristalinas.",
+    blueFlag: true,
+    accessible: true,
+    imageUrl:
+      "https://www.fuerteventuraoasispark.com/wp-content/uploads/2022/03/playa-concha-el-cotillo.jpg",
+    weather: {
+      temperature: 23,
+      windSpeed: 10,
+      waveHeight: 0.3,
+    },
+    capacity: {
+      current: 250,
+      percentage: 50,
+      lastUpdate: "2024-01-20T10:30:00",
+    },
+  },
+  {
+    id: 20,
+    name: "Grandes Playas de Corralejo",
+    island: "Fuerteventura",
+    latitude: 28.7297,
+    longitude: -13.8647,
+    description:
+      "Arena fina y dunas, dentro del Parque Natural. Kilómetros de playas vírgenes con vistas a Lanzarote.",
+    blueFlag: true,
+    accessible: true,
+    imageUrl:
+      "https://www.fuerteventuraoasispark.com/wp-content/uploads/2022/03/grandes-playas-corralejo.jpg",
+    weather: {
+      temperature: 24,
+      windSpeed: 18,
+      waveHeight: 1.0,
+    },
+    capacity: {
+      current: 600,
+      percentage: 30,
+      lastUpdate: "2024-01-20T10:30:00",
+    },
+  },
+  {
+    id: 21,
+    name: "Playa del Castillo",
+    island: "Fuerteventura",
+    latitude: 28.3797,
+    longitude: -13.8647,
+    description:
+      "Familiar, con buena infraestructura. Playa protegida ideal para el baño y deportes acuáticos.",
+    blueFlag: true,
+    accessible: true,
+    imageUrl:
+      "https://www.fuerteventuraoasispark.com/wp-content/uploads/2022/03/playa-caleta-de-fuste.jpg",
+    weather: {
+      temperature: 23,
+      windSpeed: 14,
+      waveHeight: 0.6,
+    },
+    capacity: {
+      current: 400,
+      percentage: 55,
+      lastUpdate: "2024-01-20T10:30:00",
+    },
+  },
+  {
+    id: 22,
+    name: "Playa de Ajuy",
+    island: "Fuerteventura",
+    latitude: 28.4006,
+    longitude: -14.1577,
+    description:
+      "Arena volcánica negra y vistas impresionantes. Famosa por sus cuevas y acantilados.",
+    blueFlag: false,
+    accessible: false,
+    imageUrl:
+      "https://www.fuerteventuraoasispark.com/wp-content/uploads/2022/03/playa-ajuy-fuerteventura.jpg",
+    weather: {
+      temperature: 22,
+      windSpeed: 22,
+      waveHeight: 1.8,
+    },
+    capacity: {
+      current: 150,
+      percentage: 25,
+      lastUpdate: "2024-01-20T10:30:00",
+    },
+  },
 ];
