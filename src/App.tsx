@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { MapPin, Waves, Sun, Wind, Umbrella } from 'lucide-react';
+import { Waves, Sun, Wind, } from 'lucide-react';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import ContactForm from './components/ContactForm';

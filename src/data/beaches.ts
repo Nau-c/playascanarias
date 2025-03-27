@@ -447,4 +447,27 @@ export const beaches: Beach[] = [
       lastUpdate: "2024-01-20T10:30:00",
     },
   },
+  {
+    id: 23,
+    name: "Playa de Los Cristianos",
+    island: "Tenerife",
+    latitude: 28.0486,
+    longitude: -16.7149,
+    description:
+      "Muy popular entre turistas, con aguas tranquilas y excelentes servicios. Perfecta para familias y actividades acuáticas.",
+    blueFlag: true,
+    accessible: true,
+    imageUrl:
+      "https://www.webtenerife.com/wp-content/uploads/2019/11/playa-los-cristianos-1.jpg",
+    weather: {
+      temperature: 24,
+      windSpeed: 12,
+      waveHeight: 0.5,
+    },
+    capacity: {
+      current: 600,
+      percentage: 65,
+      lastUpdate: "2024-01-20T10:30:00",
+    },
+  },
 ];
