@@ -7,7 +7,6 @@ import BeachCard from './components/BeachCard';
 import { beaches, type Beach } from './data/beaches';
 import { getWeather } from './services/weather';
 import BeachSearch from './components/BeachSearch';
-import { Analytics } from '@vercel/analytics/next';
 
 function App() {
   const [beachesWithWeather, setBeachesWithWeather] = useState<Beach[]>([]);
@@ -58,7 +57,6 @@ function App() {
             </p>
           </div>
         </section>
-        <Analytics />
         {/* Update the search section */}
         <section id="buscador" className="container mx-auto px-4 py-16">
           <BeachSearch
