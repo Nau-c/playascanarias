@@ -124,7 +124,6 @@ function App() {
       </main>
 
       <Footer />
-      <Analytics />
     </div>
   );
 }
