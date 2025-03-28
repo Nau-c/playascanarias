@@ -23,8 +23,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Contacto</h3>
             <p className="text-gray-400">
-              Email: info@playascanarias.com<br />
-              Tel: +34 928 123 456
+              Email: nauzetlopezmendoza@gmail.com<br />
             </p>
           </div>
         </div>
