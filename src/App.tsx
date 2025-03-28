@@ -7,7 +7,7 @@ import BeachCard from './components/BeachCard';
 import { beaches, type Beach } from './data/beaches';
 import { getWeather } from './services/weather';
 import BeachSearch from './components/BeachSearch';
-import { Analytics } from './components/Analytics';
+import { Analytics } from '@vercel/analytics/next';
 
 function App() {
   const [beachesWithWeather, setBeachesWithWeather] = useState<Beach[]>([]);
