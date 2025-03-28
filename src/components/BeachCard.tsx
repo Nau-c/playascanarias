@@ -26,6 +26,16 @@ export default function BeachCard({ beach }: BeachCardProps) {
   const isAjuy = beach.name === "Playa de Ajuy";
   const isLosCristianos = beach.name === "Playa de Los Cristianos";
   const isDuque = beach.name === "Playa de Duque";
+  const isPapagayo = beach.name === "Playa de Papagayo";
+  const isBlanca = beach.name === "Playa Blanca";
+  const isFamara = beach.name === "Playa de Famara";
+  const isReducto = beach.name === "Playa del Reducto";
+  const isCucharas = beach.name === "Playa de Las Cucharas";
+  const isPocillos = beach.name === "Playa de Los Pocillos";
+  const isPlayaGrande = beach.name === "Playa Grande";
+  const isCaletonBlanco = beach.name === "Playa del Caletón Blanco";
+  const isGarita = beach.name === "Playa de La Garita";
+  const isQuemada = beach.name === "Playa Quemada";
 
 
   const getOccupancyColor = (percentage: number) => {
@@ -930,6 +940,429 @@ export default function BeachCard({ beach }: BeachCardProps) {
               <div className="flex items-center">
                 <div className={`w-3 h-3 rounded-full ${getOccupancyColor(50)} mr-2`}></div>
                 <span className="text-sm">Zona Familiar: 50%</span>
+              </div>
+            </div>
+            <div className="mt-2 text-xs text-gray-500">
+              <div className="flex items-center gap-2 justify-center">
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-green-500 mr-1"></div>
+                  <span>Baja</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-yellow-500 mr-1"></div>
+                  <span>Media</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-red-500 mr-1"></div>
+                  <span>Alta</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+        {isPapagayo && (
+          <div className="border-t pt-4 mt-4">
+            <div className="flex items-center mb-2">
+              <Users className="w-5 h-5 text-gray-600 mr-2" />
+              <span className="font-semibold">Ocupación por zonas:</span>
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(60)} mr-2`}></div>
+                <span className="text-sm">Playa Principal: 60%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(45)} mr-2`}></div>
+                <span className="text-sm">Calas: 45%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(50)} mr-2`}></div>
+                <span className="text-sm">Zona Mirador: 50%</span>
+              </div>
+            </div>
+            <div className="mt-2 text-xs text-gray-500">
+              <div className="flex items-center gap-2 justify-center">
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-green-500 mr-1"></div>
+                  <span>Baja</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-yellow-500 mr-1"></div>
+                  <span>Media</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-red-500 mr-1"></div>
+                  <span>Alta</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+        {isBlanca && (
+          <div className="border-t pt-4 mt-4">
+            <div className="flex items-center mb-2">
+              <Users className="w-5 h-5 text-gray-600 mr-2" />
+              <span className="font-semibold">Ocupación por zonas:</span>
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(45)} mr-2`}></div>
+                <span className="text-sm">Zona Familiar: 45%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(50)} mr-2`}></div>
+                <span className="text-sm">Zona Puerto: 50%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(55)} mr-2`}></div>
+                <span className="text-sm">Zona Comercial: 55%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(40)} mr-2`}></div>
+                <span className="text-sm">Zona Tranquila: 40%</span>
+              </div>
+            </div>
+            <div className="mt-2 text-xs text-gray-500">
+              <div className="flex items-center gap-2 justify-center">
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-green-500 mr-1"></div>
+                  <span>Baja</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-yellow-500 mr-1"></div>
+                  <span>Media</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-red-500 mr-1"></div>
+                  <span>Alta</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {isFamara && (
+          <div className="border-t pt-4 mt-4">
+            <div className="flex items-center mb-2">
+              <Users className="w-5 h-5 text-gray-600 mr-2" />
+              <span className="font-semibold">Ocupación por zonas:</span>
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(65)} mr-2`}></div>
+                <span className="text-sm">Zona Surf: 65%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(70)} mr-2`}></div>
+                <span className="text-sm">Zona Kite: 70%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(45)} mr-2`}></div>
+                <span className="text-sm">Zona Principal: 45%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(40)} mr-2`}></div>
+                <span className="text-sm">Zona Acantilados: 40%</span>
+              </div>
+            </div>
+            <div className="mt-2 text-xs text-gray-500">
+              <div className="flex items-center gap-2 justify-center">
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-green-500 mr-1"></div>
+                  <span>Baja</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-yellow-500 mr-1"></div>
+                  <span>Media</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-red-500 mr-1"></div>
+                  <span>Alta</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {isReducto && (
+          <div className="border-t pt-4 mt-4">
+            <div className="flex items-center mb-2">
+              <Users className="w-5 h-5 text-gray-600 mr-2" />
+              <span className="font-semibold">Ocupación por zonas:</span>
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(50)} mr-2`}></div>
+                <span className="text-sm">Zona Norte: 50%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(55)} mr-2`}></div>
+                <span className="text-sm">Zona Central: 55%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(45)} mr-2`}></div>
+                <span className="text-sm">Zona Sur: 45%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(40)} mr-2`}></div>
+                <span className="text-sm">Zona Arrecifes: 40%</span>
+              </div>
+            </div>
+            <div className="mt-2 text-xs text-gray-500">
+              <div className="flex items-center gap-2 justify-center">
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-green-500 mr-1"></div>
+                  <span>Baja</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-yellow-500 mr-1"></div>
+                  <span>Media</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-red-500 mr-1"></div>
+                  <span>Alta</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {isCucharas && (
+          <div className="border-t pt-4 mt-4">
+            <div className="flex items-center mb-2">
+              <Users className="w-5 h-5 text-gray-600 mr-2" />
+              <span className="font-semibold">Ocupación por zonas:</span>
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(70)} mr-2`}></div>
+                <span className="text-sm">Zona Windsurf: 70%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(55)} mr-2`}></div>
+                <span className="text-sm">Zona Principal: 55%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(45)} mr-2`}></div>
+                <span className="text-sm">Zona Familiar: 45%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(60)} mr-2`}></div>
+                <span className="text-sm">Zona Turística: 60%</span>
+              </div>
+            </div>
+            <div className="mt-2 text-xs text-gray-500">
+              <div className="flex items-center gap-2 justify-center">
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-green-500 mr-1"></div>
+                  <span>Baja</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-yellow-500 mr-1"></div>
+                  <span>Media</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-red-500 mr-1"></div>
+                  <span>Alta</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {isPocillos && (
+          <div className="border-t pt-4 mt-4">
+            <div className="flex items-center mb-2">
+              <Users className="w-5 h-5 text-gray-600 mr-2" />
+              <span className="font-semibold">Ocupación por zonas:</span>
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(55)} mr-2`}></div>
+                <span className="text-sm">Zona Norte: 55%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(60)} mr-2`}></div>
+                <span className="text-sm">Zona Central: 60%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(50)} mr-2`}></div>
+                <span className="text-sm">Zona Sur: 50%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(45)} mr-2`}></div>
+                <span className="text-sm">Zona Paseo: 45%</span>
+              </div>
+            </div>
+            <div className="mt-2 text-xs text-gray-500">
+              <div className="flex items-center gap-2 justify-center">
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-green-500 mr-1"></div>
+                  <span>Baja</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-yellow-500 mr-1"></div>
+                  <span>Media</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-red-500 mr-1"></div>
+                  <span>Alta</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {isPlayaGrande && (
+          <div className="border-t pt-4 mt-4">
+            <div className="flex items-center mb-2">
+              <Users className="w-5 h-5 text-gray-600 mr-2" />
+              <span className="font-semibold">Ocupación por zonas:</span>
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(65)} mr-2`}></div>
+                <span className="text-sm">Zona Principal: 65%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(70)} mr-2`}></div>
+                <span className="text-sm">Zona Comercial: 70%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(50)} mr-2`}></div>
+                <span className="text-sm">Zona Familiar: 50%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(55)} mr-2`}></div>
+                <span className="text-sm">Zona Deportiva: 55%</span>
+              </div>
+            </div>
+            <div className="mt-2 text-xs text-gray-500">
+              <div className="flex items-center gap-2 justify-center">
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-green-500 mr-1"></div>
+                  <span>Baja</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-yellow-500 mr-1"></div>
+                  <span>Media</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-red-500 mr-1"></div>
+                  <span>Alta</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {isCaletonBlanco && (
+          <div className="border-t pt-4 mt-4">
+            <div className="flex items-center mb-2">
+              <Users className="w-5 h-5 text-gray-600 mr-2" />
+              <span className="font-semibold">Ocupación por zonas:</span>
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(35)} mr-2`}></div>
+                <span className="text-sm">Zona Norte: 35%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(30)} mr-2`}></div>
+                <span className="text-sm">Zona Sur: 30%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(40)} mr-2`}></div>
+                <span className="text-sm">Piscinas Naturales: 40%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(25)} mr-2`}></div>
+                <span className="text-sm">Zona Volcánica: 25%</span>
+              </div>
+            </div>
+            <div className="mt-2 text-xs text-gray-500">
+              <div className="flex items-center gap-2 justify-center">
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-green-500 mr-1"></div>
+                  <span>Baja</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-yellow-500 mr-1"></div>
+                  <span>Media</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-red-500 mr-1"></div>
+                  <span>Alta</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {isGarita && (
+          <div className="border-t pt-4 mt-4">
+            <div className="flex items-center mb-2">
+              <Users className="w-5 h-5 text-gray-600 mr-2" />
+              <span className="font-semibold">Ocupación por zonas:</span>
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(45)} mr-2`}></div>
+                <span className="text-sm">Zona Principal: 45%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(40)} mr-2`}></div>
+                <span className="text-sm">Zona Familiar: 40%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(35)} mr-2`}></div>
+                <span className="text-sm">Zona Tranquila: 35%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(50)} mr-2`}></div>
+                <span className="text-sm">Zona Piscina: 50%</span>
+              </div>
+            </div>
+            <div className="mt-2 text-xs text-gray-500">
+              <div className="flex items-center gap-2 justify-center">
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-green-500 mr-1"></div>
+                  <span>Baja</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-yellow-500 mr-1"></div>
+                  <span>Media</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 rounded-full bg-red-500 mr-1"></div>
+                  <span>Alta</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+        {isQuemada && (
+          <div className="border-t pt-4 mt-4">
+            <div className="flex items-center mb-2">
+              <Users className="w-5 h-5 text-gray-600 mr-2" />
+              <span className="font-semibold">Ocupación por zonas:</span>
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(30)} mr-2`}></div>
+                <span className="text-sm">Zona Norte: 30%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(35)} mr-2`}></div>
+                <span className="text-sm">Zona Central: 35%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(25)} mr-2`}></div>
+                <span className="text-sm">Zona Sur: 25%</span>
+              </div>
+              <div className="flex items-center">
+                <div className={`w-3 h-3 rounded-full ${getOccupancyColor(20)} mr-2`}></div>
+                <span className="text-sm">Zona Pescadores: 20%</span>
               </div>
             </div>
             <div className="mt-2 text-xs text-gray-500">

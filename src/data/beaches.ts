@@ -470,4 +470,185 @@ export const beaches: Beach[] = [
       lastUpdate: "2024-01-20T10:30:00",
     },
   },
+  {
+    id: 24,
+    name: "Playa de Papagayo",
+    island: "Lanzarote",
+    latitude: 28.8361,
+    longitude: -13.7819,
+    description:
+      "La más icónica de Lanzarote. Arena dorada, aguas cristalinas y vistas espectaculares. Forma parte del Monumento Natural de Los Ajaches.",
+    blueFlag: true,
+    accessible: false,
+    imageUrl:
+      "https://www.holaislascanarias.com/sites/default/files/styles/masonry_image/public/resources/resource_image/papagayo_lanzarote.jpg",
+    weather: {
+      temperature: 23,
+      windSpeed: 15,
+      waveHeight: 0.6,
+    },
+    capacity: {
+      current: 250,
+      percentage: 45,
+      lastUpdate: "2024-01-20T10:30:00",
+    },
+  },
+  {
+    id: 25,
+    name: "Playa Blanca",
+    island: "Lanzarote",
+    latitude: 28.8639,
+    longitude: -13.8319,
+    description:
+      "En el pueblo del mismo nombre. Tranquila, ideal para familias y con servicios cerca.",
+    blueFlag: true,
+    accessible: true,
+    imageUrl:
+      "https://www.holaislascanarias.com/sites/default/files/styles/masonry_image/public/resources/resource_image/playa_blanca_lanzarote.jpg",
+    weather: {
+      temperature: 24,
+      windSpeed: 12,
+      waveHeight: 0.4,
+    },
+  },
+  {
+    id: 26,
+    name: "Playa de Famara",
+    island: "Lanzarote",
+    latitude: 29.1128,
+    longitude: -13.5569,
+    description:
+      "Muy popular para surf y kite. Rodeada de acantilados impresionantes. Salvaje, con fuerte oleaje.",
+    blueFlag: false,
+    accessible: false,
+    imageUrl:
+      "https://www.holaislascanarias.com/sites/default/files/styles/masonry_image/public/resources/resource_image/famara_lanzarote.jpg",
+    weather: {
+      temperature: 22,
+      windSpeed: 25,
+      waveHeight: 2.0,
+    },
+  },
+  {
+    id: 27,
+    name: "Playa del Reducto",
+    island: "Lanzarote",
+    latitude: 28.9639,
+    longitude: -13.5472,
+    description:
+      "Playa urbana, protegida por arrecifes naturales. Ideal para bañarse con seguridad.",
+    blueFlag: true,
+    accessible: true,
+    imageUrl:
+      "https://www.holaislascanarias.com/sites/default/files/styles/masonry_image/public/resources/resource_image/reducto_lanzarote.jpg",
+    weather: {
+      temperature: 23,
+      windSpeed: 14,
+      waveHeight: 0.5,
+    },
+  },
+  {
+    id: 28,
+    name: "Playa de Las Cucharas",
+    island: "Lanzarote",
+    latitude: 28.9972,
+    longitude: -13.4833,
+    description: "Ideal para windsurf. Muy turística y con muchos servicios.",
+    blueFlag: true,
+    accessible: true,
+    imageUrl:
+      "https://www.holaislascanarias.com/sites/default/files/styles/masonry_image/public/resources/resource_image/cucharas_lanzarote.jpg",
+    weather: {
+      temperature: 23,
+      windSpeed: 20,
+      waveHeight: 1.2,
+    },
+  },
+  {
+    id: 29,
+    name: "Playa de Los Pocillos",
+    island: "Lanzarote",
+    latitude: 28.9236,
+    longitude: -13.6597,
+    description: "Amplia, con paseo marítimo. Muy buena para familias.",
+    blueFlag: true,
+    accessible: true,
+    imageUrl:
+      "https://www.holaislascanarias.com/sites/default/files/styles/masonry_image/public/resources/resource_image/pocillos_lanzarote.jpg",
+    weather: {
+      temperature: 24,
+      windSpeed: 12,
+      waveHeight: 0.5,
+    },
+  },
+  {
+    id: 30,
+    name: "Playa Grande",
+    island: "Lanzarote",
+    latitude: 28.9236,
+    longitude: -13.6597,
+    description:
+      "Una de las más visitadas de la isla. Arena dorada y ambiente turístico.",
+    blueFlag: true,
+    accessible: true,
+    imageUrl:
+      "https://www.holaislascanarias.com/sites/default/files/styles/masonry_image/public/resources/resource_image/playa_grande_lanzarote.jpg",
+    weather: {
+      temperature: 23,
+      windSpeed: 15,
+      waveHeight: 0.7,
+    },
+  },
+  {
+    id: 31,
+    name: "Playa del Caletón Blanco",
+    island: "Lanzarote",
+    latitude: 29.2125,
+    longitude: -13.4292,
+    description:
+      "Arena blanca y formaciones de lava negra. Aguas tranquilas, ideal para fotos.",
+    blueFlag: false,
+    accessible: false,
+    imageUrl:
+      "https://www.holaislascanarias.com/sites/default/files/styles/masonry_image/public/resources/resource_image/caleton_blanco_lanzarote.jpg",
+    weather: {
+      temperature: 22,
+      windSpeed: 18,
+      waveHeight: 0.8,
+    },
+  },
+  {
+    id: 32,
+    name: "Playa de La Garita",
+    island: "Lanzarote",
+    latitude: 29.1333,
+    longitude: -13.4472,
+    description: "Playa local, ideal para disfrutar sin aglomeraciones.",
+    blueFlag: false,
+    accessible: true,
+    imageUrl:
+      "https://www.holaislascanarias.com/sites/default/files/styles/masonry_image/public/resources/resource_image/garita_lanzarote.jpg",
+    weather: {
+      temperature: 23,
+      windSpeed: 16,
+      waveHeight: 0.9,
+    },
+  },
+  {
+    id: 33,
+    name: "Playa Quemada",
+    island: "Lanzarote",
+    latitude: 28.9125,
+    longitude: -13.7153,
+    description: "Tranquila y rústica. Una joya escondida para desconectar.",
+    blueFlag: false,
+    accessible: false,
+    imageUrl:
+      "https://www.holaislascanarias.com/sites/default/files/styles/masonry_image/public/resources/resource_image/quemada_lanzarote.jpg",
+    weather: {
+      temperature: 23,
+      windSpeed: 14,
+      waveHeight: 0.6,
+    },
+  },
 ];
