@@ -40,6 +40,11 @@ export default function BeachCard({ beach }: BeachCardProps) {
   const isCocina = beach.name === "Playa de La Cocina";
   const isSalado = beach.name === "Playa del Salado";
   const isAmbar = beach.name === "Playa del Ambar";
+  const isTimijiraque = beach.name === "Playa del Timijiraque";
+  const isMaceta = beach.name === "Playa de La Maceta";
+  const isCharcoAzul = beach.name === "Playa del Charco Azul";
+  const isVerodal = beach.name === "Playa del Verodal";
+  const isCharcoManso = beach.name === "Playa del Charco Manso";
 
   const getOccupancyColor = (percentage: number) => {
     if (percentage < 33) return 'bg-green-500';
