@@ -85,9 +85,6 @@ export default function ContactForm() {
           viewport={{ once: true }}
           className="max-w-xl mx-auto"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
-            Contáctame
-          </h2>
 
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
