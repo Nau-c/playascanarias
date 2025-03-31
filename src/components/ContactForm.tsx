@@ -41,7 +41,7 @@ export default function ContactForm() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setLoading(true);
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://playascanarias-api.onrender.com/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -49,6 +49,7 @@ export default function ContactForm() {
         },
         body: JSON.stringify(values),
       });
+
 
       const data = await response.json();
       if (response.ok) {
