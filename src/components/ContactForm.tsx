@@ -1,33 +1,44 @@
-import React, { useState } from 'react';
-import { useToast } from '../hooks/use-toast';
-import { z } from 'zod';
+"use client";
+
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from 'react-hook-form';
+import { motion } from "framer-motion";
 import { Send } from "lucide-react";
+import { useForm } from "react-hook-form";
+import * as z from "zod";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "./ui/form";
+import { Input } from "./ui/input";
+import { Textarea } from "./ui/textarea";
+import { useState } from "react";
+import { Button } from "./ui/button";
+import { useToast } from "../hooks/use-toast";
 
 const formSchema = z.object({
+  name: z.string().min(2, "El nombre debe tener al menos 2 caracteres"),
   email: z.string().email("Correo inválido"),
   message: z.string().min(10, "El mensaje debe tener al menos 10 caracteres"),
 });
 
 export default function ContactForm() {
-  const [loading, setLoading] = useState(false);
   const { toast } = useToast();
+  const [loading, setLoading] = useState(false);
 
-  const {
-    register,
-    handleSubmit,
-    reset,
-    formState: { errors }
-  } = useForm<z.infer<typeof formSchema>>({
+  const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
+      name: "",
       email: "",
       message: "",
     },
   });
 
-  const onSubmit = async (values: z.infer<typeof formSchema>) => {
+  async function onSubmit(values: z.infer<typeof formSchema>) {
     setLoading(true);
     try {
       const response = await fetch("/api/contact", {
@@ -45,7 +56,7 @@ export default function ContactForm() {
           title: "Mensaje enviado!",
           description: "Gracias por tu mensaje. Te responderé pronto.",
         });
-        reset();
+        form.reset();
       } else {
         toast({
           title: "Error al enviar el mensaje",
@@ -62,43 +73,78 @@ export default function ContactForm() {
     } finally {
       setLoading(false);
     }
-  };
+  }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="max-w-lg mx-auto">
-      <div className="mb-4">
-        <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
-          Correo Electrónico
-        </label>
-        <input
-          id="email"
-          type="email"
-          {...register("email")}
-          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-        />
-        {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
-      </div>
+    <section className="py-20 bg-background">
+      <div className="container mx-auto px-4">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="max-w-xl mx-auto"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
+            Contáctame
+          </h2>
 
-      <div className="mb-4">
-        <label htmlFor="message" className="block text-gray-700 font-medium mb-2">
-          Mensaje
-        </label>
-        <textarea
-          id="message"
-          {...register("message")}
-          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 h-32"
-        />
-        {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
-      </div>
+          <Form {...form}>
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+              <FormField
+                control={form.control}
+                name="name"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Nombre</FormLabel>
+                    <FormControl>
+                      <Input placeholder="Tu nombre" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
 
-      <button
-        disabled={loading}
-        type="submit"
-        className="flex items-center justify-center w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition-colors"
-      >
-        {loading ? "Enviando..." : "Enviar Mensaje"}
-        {!loading && <Send className="ml-2 h-4 w-4" />}
-      </button>
-    </form>
+              <FormField
+                control={form.control}
+                name="email"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Correo</FormLabel>
+                    <FormControl>
+                      <Input placeholder="tu.correo@example.com" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+
+              <FormField
+                control={form.control}
+                name="message"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Mensaje</FormLabel>
+                    <FormControl>
+                      <Textarea
+                        placeholder="Escribe tu mensaje..."
+                        className="min-h-[150px]"
+                        {...field}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+
+              <Button type="submit" className="w-full" disabled={loading}>
+                {loading ? "Enviando..." : "Enviar Mensaje"}
+                {!loading && <Send className="ml-2 h-4 w-4" />}
+              </Button>
+            </form>
+          </Form>
+        </motion.div>
+      </div>
+    </section>
   );
 }
