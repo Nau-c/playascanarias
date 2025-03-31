@@ -36,6 +36,7 @@ export default function BeachSearch({ onSearch, onIslandFilter, islands }: Beach
                     </button>
                     {islands.map((island) => (
                         <button
+                            type='button'
                             key={island}
                             onClick={() => onIslandFilter(island)}
                             className="px-4 py-2 rounded-lg bg-gray-100 hover:bg-gray-200"
