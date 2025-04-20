@@ -23,12 +23,12 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Contacto</h3>
             <p className="text-gray-400">
-              Email: nauzet.lopez.mendoza.dev@gmail.com<br />
+              Email: <a href="mailto:nauzet.lopez.mendoza.dev@gmail.com" className="underline hover:text-white">nauzet.lopez.mendoza.dev@gmail.com</a><br />
             </p>
           </div>
         </div>
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; © 2024 Playas Canarias por Nauzet López Mendoza. Todos los derechos reservados.</p>
+          <p>&copy;2024 Playas Canarias por Nauzet López Mendoza. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
