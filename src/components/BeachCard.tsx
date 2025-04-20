@@ -64,12 +64,17 @@ export default function BeachCard({ beach }: BeachCardProps) {
           <h3 className="text-xl font-bold text-gray-900">{beach.name}</h3>
           <div className="flex gap-2">
             {beach.blueFlag && (
-              <Award className="w-5 h-5 text-blue-500" title="Bandera Azul" />
+              <span title="Bandera Azul">
+                <Award className="w-5 h-5 text-blue-500" />
+              </span>
             )}
             {beach.accessible && (
-              <Accessibility className="w-5 h-5 text-green-500" title="Playa Accesible" />
+              <span title="Playa Accesible">
+                <Accessibility className="w-5 h-5 text-green-500" />
+              </span>
             )}
           </div>
+
         </div>
         <div className="flex items-center text-gray-600 mb-2">
           <MapPin className="w-4 h-4 mr-1" />
