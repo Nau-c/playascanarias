@@ -23,7 +23,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Contacto</h3>
             <p className="text-gray-400">
-              Email: nauzetlopezmendoza@gmail.com<br />
+              Email: nauzet.lopez.mendoza.dev@gmail.com<br />
             </p>
           </div>
         </div>
