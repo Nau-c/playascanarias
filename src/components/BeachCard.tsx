@@ -325,8 +325,6 @@ export default function BeachCard({ beach }: BeachCardProps) {
             </div>
           </div>
         )}
-        // ... existing code ...
-
         {isVerodal && (
           <div className="border-t pt-4 mt-4">
             <div className="flex items-center mb-2">
